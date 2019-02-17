@@ -9,8 +9,9 @@ class Comment extends Model
     protected $fillable = [
         'body',
     ];
+
     public function post()
     {
-         return $this->belongsTo('App\Post');
+        return $this->belongsTo('App\Post');
     }
 }
